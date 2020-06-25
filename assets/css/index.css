@@ -27,8 +27,6 @@ body {
     display: flex;
 }
 
-.navbar-nav.navbar-center {
-    position: absolute !important;
-    left: 50% !important;
-    transform: translatex(-50%);
+.carousel-item {
+    height: auto;
 }
