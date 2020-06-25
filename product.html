@@ -8,85 +8,225 @@
             href="https://fonts.googleapis.com/css2?family=Saira+Condensed&display=swap"
             rel="stylesheet"
         />
-        <link rel="stylesheet" href="./product.css" />
-        <link rel="stylesheet" href="./mobile.css" />
+        <link rel="stylesheet" href="./assets/css/product.css" />
+        <link rel="stylesheet" href="./assets/css/mobile.css" />
+        <link
+            rel="stylesheet"
+            href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+            integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+            crossorigin="anonymous"
+        />
+        <link
+            rel="stylesheet"
+            href="path/to/font-awesome/css/font-awesome.min.css"
+        />
     </head>
     <body>
-        <div class="text1">
-            <h1>
-                ALL PRODUCTS
-               </div>
-            </h1>
-        </div>
+        <section class="header-1">
+            <h6>Gratis Ongkir Sampai Rp. 20.000 + Free Box</h6>
+        </section>
+        <!-- Navbar -->
+        <nav class="navbar navbar-expand-md navbar-light">
+            <a class="navbar-brand" href="#!">
+                <img
+                    src="./assets/logo/logo.png"
+                    height="80"
+                    alt="MYWATCH logo"
+                />
+            </a>
 
-        <!-- <div class="img">
-            <img src="./assets/header img.jpg" alt="header-img" />
-        </div> -->
+            <!-- Collapse button -->
+            <button
+                class="navbar-toggler"
+                type="button"
+                data-toggle="collapse"
+                data-target="#basicExampleNav1"
+                aria-controls="basicExampleNav1"
+                aria-expanded="false"
+                aria-label="Toggle navigation"
+            >
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <!-- Breadcrumbs -->
+
+            <!-- Links -->
+            <div class="collapse navbar-collapse" id="basicExampleNav1">
+                <!-- Right -->
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item active">
+                        <a href="#!" class="nav-link waves-effect">
+                            Home
+                        </a>
+                    </li>
+                    <div class="dropdown open">
+                        <a
+                            class="nav-item active bg-white dropdown-toggle nav-link waves-effect"
+                            type="button"
+                            id="triggerId"
+                            data-toggle="dropdown"
+                            aria-haspopup="true"
+                            aria-expanded="false"
+                        >
+                            Product</a
+                        >
+                        <div class="dropdown-menu" aria-labelledby="triggerId">
+                            <a class="dropdown-item" href="./product.html"
+                                >Christian Ardyen</a
+                            >
+                            <a class="dropdown-item" href="./merk2.html"
+                                >Jean Alexis</a
+                            >
+                            <a class="dropdown-item" href="./merk3.html"
+                                >Alexandra Christi</a
+                            >
+                            <a class="dropdown-item" href="./merk4.html"
+                                >Jims Honey</a
+                            >
+                            <a class="dropdown-item" href="./merk5.html"
+                                >Michael Kors</a
+                            >
+                        </div>
+                    </div>
+
+                    <li class="nav-item active">
+                        <a href="#!" class="nav-link waves-effect">
+                            Contact
+                        </a>
+                    </li>
+                    <li class="nav-item active">
+                        <a href="#!" class="nav-link waves-effect">
+                            <i
+                                class="fa fa-shopping-cart"
+                                aria-hidden="true"
+                            ></i>
+                            Bayar Yuk!
+                        </a>
+                    </li>
+                    <li class="nav-item active">
+                        <a href="#!" class="nav-link waves-effect">
+                            Sign in
+                        </a>
+                    </li>
+                    <li class="nav-item pl-2 mb-2 mb-md-0">
+                        <a
+                            href="#!"
+                            type="button"
+                            class="btn btn-outline-info btn-md btn-rounded btn-navbar waves-effect waves-dark"
+                            >Sign up</a
+                        >
+                    </li>
+                </ul>
+            </div>
+            <!-- Links -->
+        </nav>
+
+        <div class="img">
+            <img src="./assets/logo/header img.jpg" alt="header-img" />
+        </div>
 
         <div class="text">
             <h2>BUY 2 GET 1</h2>
             <div class="space"></div>
         </div>
 
-        <div class="container-product">
+        <br />
+        <nav class="navbar navbar-light bg-light" id="toolbar">
+            <span class="navbar-text" id="toolbar-content">
+                Filter From Category
+                <div class="dropdown open" id="drop">
+                    <a
+                        class="nav-item active bg-white dropdown-toggle nav-link waves-effect"
+                        type="button"
+                        id="triggerId"
+                        data-toggle="dropdown"
+                        aria-haspopup="true"
+                        aria-expanded="false"
+                    >
+                        Product</a
+                    >
+                    <div class="dropdown-menu" aria-labelledby="triggerId">
+                        <a class="dropdown-item" href="./product.html"
+                            >Christian Ardyen</a
+                        >
+                        <a class="dropdown-item" href="./merk2.html"
+                            >Jean Alexis</a
+                        >
+                        <a class="dropdown-item" href="./merk3.html"
+                            >Alexandra Christi</a
+                        >
+                        <a class="dropdown-item" href="./merk4.html"
+                            >Jims Honey</a
+                        >
+                        <a class="dropdown-item" href="./merk5.html"
+                            >Michael Kors</a
+                        >
+                    </div>
+                </div>
+            </span>
+        </nav>
+        <br />
+        <div class="container-product-merk">
             <div class="card">
-                <img src="./assets/alexandra-christi ac.jpg" alt="watch" />
+                <img src="./assets/ardan/arden1.jpg" alt="watch" />
                 <div class="card-text">
-                    <p><b>Alexandre Christie AC-6511 Original</b></p>
-                    <h5>Rp 615.000</h5>
+                    <p>Christyan Arden CA8075</p>
+                    <h5>Rp365.000</h5>
                     <a href="#">Checkout</a>
                 </div>
             </div>
             <div class="card">
-                <img src="./assets/Guess w0.jpg" alt="watch" />
+                <img src="./assets/ardan/arden2.jpg" alt="watch" />
                 <div class="card-text">
-                    <p><b>Guess W0325L8 Original</b></p>
-                    <h5>Rp 914.088</h5>
-                    <a href="#">Checkout</a>
-                </div>
-            </div>
-            <div class="card">
-                <img src="./assets/jims honey1.jpg" alt="watch" />
-                <div class="card-text">
-                    <p><b>Jims Honey 8067 M01 Original</b></p>
-                    <h5>Rp 167.900</h5>
-                    <a href="#">Checkout</a>
-                </div>
-            </div>
-            <div class="card">
-                <img src="./assets/q&q1.jpg" alt="watch" />
-                <div class="card-text">
-                    <p><b>Q&Q VQ96J017Y Original</b></p>
-                    <h5>Rp 150.000</h5>
+                    <p>Christyan Arden CA2685</p>
+                    <h5>Rp195.000</h5>
                     <a href="#">Checkout</a>
                 </div>
             </div>
             <div class="card">
                 <img
-                    src="./assets/Baru_Casio_Lq_142_1Bdf_Quartz_Rubber_Band_100_Original.jpg"
+                    src="./assets/ardan/arden3.jpg"
                     alt="watch"
+                    style="height: 200px;"
                 />
                 <div class="card-text">
-                    <p><b>Casio LQ-142-1BDF Original</b></p>
-                    <h5>Rp 160.000</h5>
+                    <p>
+                        Christyan Arden FALANA
+                    </p>
+                    <h5>Rp299.000</h5>
                     <a href="#">Checkout</a>
                 </div>
             </div>
             <div class="card">
-                <img src="./assets/alba1.jpg" alt="watch" />
+                <img src="./assets/ardan/arden4.jpg" alt="watch" />
                 <div class="card-text">
-                    <p><b>Alba AXT846 Original</b></p>
-                    <h5>Rp 660.000</h5>
+                    <p>
+                        Christyan Arden OBELIUS
+                    </p>
+                    <h5>Rp299.000</h5>
+                    <a href="#">Checkout</a>
+                </div>
+            </div>
+            <div class="card">
+                <img src="./assets/ardan/arden5.jpg" alt="watch" />
+                <div class="card-text">
+                    <p>
+                        Christyan Arden OWEN
+                    </p>
+                    <h5>Rp 299.000</h5>
                     <a href="#">Checkout</a>
                 </div>
             </div>
         </div>
 
+        <div class="klik">
+            <a href="#">Prev</a>Page 1 of 5<a href="./merk2.html">Next</a>
+        </div>
         <div class="info">
             <div class="link">
                 <a href="#">Home</a>
                 <a href="#">Login</a>
-                <a href="#">Product</a>
+                <a href="./product.html">Product</a>
                 <a href="#">Checkout</a>
             </div>
 
@@ -102,16 +242,16 @@
             </div>
 
             <div class="link">
-                <h5>
+                <p>
                     Customer Service:
                     <br />
-                    WhatsApp : +62 898 6393 373 <br /><br />
+                    WhatsApp : +62 888 0276 2751 <br />
                     Senin - Jumat: 09:00 - 17:00 WIB
-                    <br /><br />
+                    <br />
                     Sabtu: 09:00 - 15:00 WIB
-                    <br /><br />
+                    <br />
                     Minggu: 09:00 - 15:00 WIB
-                </h5>
+                </p>
             </div>
         </div>
 
@@ -119,17 +259,28 @@
         <footer>
             <a href="https:facebook.com"
                 ><img
-                    src="./assets/facebook.png"
+                    src="./assets/logo/facebook.png"
                     style="width: 24px; margin-right: 15px;"
             /></a>
             <a href="https://instagram.com"
                 ><img
-                    src="./assets/instagram-logo.png"
+                    src="./assets/logo/instagram-logo.png"
                     style="width: 24px; margin-right: 15px;"
             /></a>
+            <br />
             <div>
-                <h4>&copy2020, team 3</h4>
+                <p>&copy 2020, Mywatch.id</p>
             </div>
         </footer>
+        <script
+            src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+            integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+            crossorigin="anonymous"
+        ></script>
+        <script
+            src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+            integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+            crossorigin="anonymous"
+        ></script>
     </body>
 </html>
