@@ -11,22 +11,6 @@ body {
     height: 40px;
 }
 
-.header-2 {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    text-align: center;
-    margin: 10px;
-}
-
-.header-2-1 {
-    width: 70%;
-}
-
-.header-2-2 {
-    display: flex;
-}
-
 .carousel-item {
     height: auto;
 }
