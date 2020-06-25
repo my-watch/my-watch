@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>My Watch</title>
+        <link
+            rel="shortcut icon"
+            href="assets/img/logo.png"
+            type="image/x-icon"
+        />
+        <!-- Required meta tags -->
+        <meta charset="utf-8" />
+        <meta
+            name="viewport"
+            content="width=device-width, initial-scale=1, shrink-to-fit=no"
+        />
+
+        <!-- Bootstrap CSS -->
+        <link
+            rel="stylesheet"
+            href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+            integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+            crossorigin="anonymous"
+        />
+        <link
+            rel="stylesheet"
+            href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css"
+        />
+        <link
+            rel="stylesheet"
+            href="path/to/font-awesome/css/font-awesome.min.css"
+        />
+        <link rel="stylesheet" href="./assets/css/shopping-cart.css" />
+        <link rel="stylesheet" href="./assets/css/index.css" />
+    </head>
+    <body>
+        <section class="header-1">
+            <h6>Gratis Ongkir Sampai Rp. 20.000 + Free Box</h6>
+        </section>
+        <!-- Navbar -->
+        <nav class="navbar navbar-expand-md navbar-light">
+            <a class="navbar-brand" href="#!">
+                <img
+                    src="./assets/img/logo.png"
+                    height="80"
+                    alt="MYWATCH logo"
+                />
+            </a>
+
+            <!-- Collapse button -->
+            <button
+                class="navbar-toggler"
+                type="button"
+                data-toggle="collapse"
+                data-target="#basicExampleNav1"
+                aria-controls="basicExampleNav1"
+                aria-expanded="false"
+                aria-label="Toggle navigation"
+            >
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <!-- Breadcrumbs -->
+
+            <!-- Links -->
+            <div class="collapse navbar-collapse" id="basicExampleNav1">
+                <!-- Right -->
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item active">
+                        <a href="#!" class="nav-link waves-effect">
+                            Home
+                        </a>
+                    </li>
+                    <div class="dropdown open">
+                        <a
+                            class="nav-item active bg-white dropdown-toggle nav-link waves-effect"
+                            type="button"
+                            id="triggerId"
+                            data-toggle="dropdown"
+                            aria-haspopup="true"
+                            aria-expanded="false"
+                        >
+                            Product</a
+                        >
+                        <div class="dropdown-menu" aria-labelledby="triggerId">
+                            <a class="dropdown-item" href="#"
+                                >Christian Ardyen</a
+                            >
+                            <a class="dropdown-item" href="#">Jean Alexis</a>
+                            <a class="dropdown-item" href="#"
+                                >Alexandra Christi</a
+                            >
+                            <a class="dropdown-item" href="#">Jims Honey</a>
+                            <a class="dropdown-item" href="#">Michael Kors</a>
+                        </div>
+                    </div>
+
+                    <li class="nav-item active">
+                        <a href="#!" class="nav-link waves-effect">
+                            Contact
+                        </a>
+                    </li>
+                    <li class="nav-item active">
+                        <a href="#!" class="nav-link waves-effect">
+                            <i
+                                class="fa fa-shopping-cart"
+                                aria-hidden="true"
+                            ></i>
+                            Bayar Yuk!
+                        </a>
+                    </li>
+                    <li class="nav-item active">
+                        <a href="#!" class="nav-link waves-effect">
+                            Sign in
+                        </a>
+                    </li>
+                    <li class="nav-item pl-2 mb-2 mb-md-0">
+                        <a
+                            href="#!"
+                            type="button"
+                            class="btn btn-outline-info btn-md btn-rounded btn-navbar waves-effect waves-dark"
+                            >Sign up</a
+                        >
+                    </li>
+                </ul>
+            </div>
+            <!-- Links -->
+        </nav>
+
+        <!-- Checkoutpage -->
+        <h1 class="text-center">KERANJANG BELANJA ANDA</h1>
+        <div class="container">
+            <table id="cart" class="table table-hover table-condensed">
+                <thead>
+                    <tr>
+                        <th style="width: 50%;">Product</th>
+                        <th style="width: 10%;">Price</th>
+                        <th style="width: 8%;">Quantity</th>
+                        <th style="width: 22%;" class="text-center">
+                            Subtotal
+                        </th>
+                        <th style="width: 10%;"></th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td data-th="Product">
+                            <div class="row">
+                                <div class="col-sm-2 hidden-xs">
+                                    <img
+                                        src="http://placehold.it/80x80"
+                                        alt="..."
+                                        class="img-responsive"
+                                    />
+                                </div>
+                                <div class="col-sm-10">
+                                    <h4 class="nomargin">Product 1</h4>
+                                    <p>
+                                        Lorem ipsum dolor sit amet consectetur
+                                        adipisicing elit. Perferendis rerum non
+                                        ad consequuntur, explicabo ratione.
+                                    </p>
+                                </div>
+                            </div>
+                        </td>
+                        <td data-th="Price">Rp.765.000</td>
+                        <td data-th="Quantity">
+                            <input
+                                type="number"
+                                class="form-control text-center"
+                                value="1"
+                            />
+                        </td>
+                        <td data-th="Subtotal" class="text-center">
+                            Rp.765.000.00
+                        </td>
+                        <td class="actions" data-th="">
+                            <button class="btn btn-info btn-sm">
+                                <i class="fa fa-refresh"></i>
+                            </button>
+                            <button class="btn btn-danger btn-sm">
+                                <i class="fa fa-trash-o"></i>
+                            </button>
+                        </td>
+                    </tr>
+                </tbody>
+                <tfoot>
+                    <tr class="visible-xs">
+                        <td class="text-center">
+                            <strong>Total Rp.765.000.00</strong>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="2" class="hidden-xs"></td>
+                        <td class="hidden-xs text-center">
+                            <strong>Total Rp 765.000.00</strong>
+                        </td>
+                        <td>
+                            <a href="" class="btn btn-dark btn-block bg-black"
+                                >Checkout <i class="fa fa-angle-right"></i
+                            ></a>
+                        </td>
+                    </tr>
+                </tfoot>
+            </table>
+        </div>
+
+        <!-- Optional JavaScript -->
+        <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+        <script
+            src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+            integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+            crossorigin="anonymous"
+        ></script>
+        <script
+            src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+            integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+            crossorigin="anonymous"
+        ></script>
+        <script
+            src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+            integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+            crossorigin="anonymous"
+        ></script>
+    </body>
+</html>
