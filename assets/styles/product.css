@@ -2,6 +2,18 @@
     margin: 0;
     padding: 0;
 }
+.show-cart li {
+    display: flex;
+}
+.card {
+    margin-bottom: 20px;
+}
+.card-img-top {
+    width: 200px;
+    height: 200px;
+    align-self: center;
+}
+
 .text1 {
     margin: auto;
     text-align: left;
@@ -32,33 +44,44 @@ a:hover {
     background-color: black;
     margin: auto;
 }
-.card a {
+.card-block a {
     color: black;
     text-decoration: 1px black;
     margin: auto;
+    margin-top: 15px;
     margin-right: 10px;
     padding: 5px;
     text-align: center;
 }
 
-.card a:hover {
+.card-block a:hover {
     border: 1px solid black;
     width: 80px;
     text-align: center;
     text-decoration: none;
 }
-.card a:active {
+.card-block a:active {
     background-color: black;
     color: white;
 }
 
-.card {
+/* .card-block {
     width: 200px;
     height: 350px;
     box-shadow: black;
     margin: 10px;
     background-color: whitesmoke;
     border: none;
+    text-align: center;
+} */
+
+#toolbar-content a {
+    margin: 20px;
+}
+
+#toolbar {
+    margin-left: 300px;
+    text-align: center;
 }
 
 .card-text {
@@ -66,7 +89,7 @@ a:hover {
     height: 100px;
 }
 .card img {
-    max-width: 200px;
+    max-width: 300px;
     height: 200px;
 }
 
@@ -88,7 +111,7 @@ a:hover {
 }
 
 .container-product-merk {
-    width: 700px;
+    width: 1000px;
     margin: auto;
     display: flex;
     flex-wrap: wrap;
