@@ -28,7 +28,7 @@ img {
     max-width: 400px;
 }
 
-@media (max-width: 575px) {
+@media (max-width: 576px) {
     img {
         display: none;
     }

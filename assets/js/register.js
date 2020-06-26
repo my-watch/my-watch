@@ -5,7 +5,7 @@ async function register() {
   try {
     let fullname = document.getElementById("fullname").value;
     let email = document.getElementById("email").value;
-    let password = document.getElementById("confirm_password").value;
+    let password = document.getElementById("password").value;
 
     let userData = {
       fullname,
@@ -13,9 +13,9 @@ async function register() {
       password,
     };
 
-    // console.log(userData);
+    console.log(userData);
 
-    // Check email registred
+    //Check email registred
     let url = `https://5ef168da1faf160016b4d5c4.mockapi.io/api/users`;
 
     let response = await fetch(url);
@@ -39,7 +39,9 @@ async function register() {
       let result = await response.json();
 
       swal("Thank you for registration!", "", "success");
-      window.location.href = "/login.html";
+      setTimeout(function () {
+        window.location.href = "login.html";
+      }, 2000);
     }
   } catch (error) {
     console.error(error);
