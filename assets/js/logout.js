@@ -1,5 +1,5 @@
 let logOutUser = JSON.parse(localStorage.getItem("user"));
-console.log(logOutUser);
+// console.log(logOutUser);
 // console.log(logUser[0].fullname);
 
 let logoutBtn = document.getElementById("btn-logout");
