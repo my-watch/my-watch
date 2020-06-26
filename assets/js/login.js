@@ -16,8 +16,9 @@ function login() {
 
       if (user.length > 0) {
         if (user[0].password === password) {
-          // redirect ke halaman profile
+          // redirect to homepage
           window.location.replace("index.html");
+          localStorage.setItem("user", JSON.stringify(user));
         } else {
           swal("Your email and password are incorrect", "", "warning");
         }
