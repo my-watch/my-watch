@@ -24,7 +24,9 @@ async function register() {
     let registeredUser = allUsers.filter((user) => user.email === email);
 
     // If registred
-    if (registeredUser.length > 0) {
+    if (fullname === "" && email === "" && password === "") {
+      swal("Form must be filled!", "", "warning");
+    } else if (registeredUser.length > 0 && email === email) {
       swal("You are already registered!", "", "warning");
     } else {
       // If not registred
@@ -40,8 +42,8 @@ async function register() {
 
       swal("Thank you for registration!", "", "success");
       setTimeout(function () {
-        window.location.href = "login.html";
-      }, 2000);
+        window.location.href = "/login_customer.html";
+      }, 5000);
     }
   } catch (error) {
     console.error(error);
