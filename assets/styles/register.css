@@ -1,0 +1,41 @@
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@300&family=Fjalla+One&family=Roboto+Slab&family=Sriracha&display=swap');
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    margin-top: 50px;
+}
+
+.logo-head {
+    width: 20%;
+}
+
+/* .col-sm {
+    border: 1px solid black;
+} */
+
+img {
+    width: 100%;
+    height: 100%;
+}
+
+.form-register {
+    border: 0.1px solid rgb(244, 250, 244);
+    max-width: 400px;
+}
+
+@media (max-width: 575px) {
+    img {
+        display: none;
+    }
+
+    .form-register {
+        max-width: 400px;
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+}
