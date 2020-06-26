@@ -1,0 +1,20 @@
+@media screen and (max-width: 768px) {
+    .container-product {
+        width: auto;
+    }
+
+    .container-product-merk {
+        width: auto;
+    }
+    .card {
+        margin: 10px;
+    }
+
+    .info {
+        display: flex;
+        flex-direction: column;
+    }
+    .link {
+        margin-top: 20px;
+    }
+}
