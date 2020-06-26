@@ -2,7 +2,7 @@
     margin: 0;
     padding: 0;
 }
-.show-cart li {
+/* .show-cart li {
     display: flex;
 }
 .card {
@@ -12,7 +12,7 @@
     width: 200px;
     height: 200px;
     align-self: center;
-}
+} */
 
 .text1 {
     margin: auto;
@@ -35,7 +35,7 @@ a:hover {
 
 #toolbar-content #drop {
     margin: auto;
-    margin-left: 20px;
+    margin-left: 50px;
 }
 
 .space {
@@ -44,7 +44,7 @@ a:hover {
     background-color: black;
     margin: auto;
 }
-.card-block a {
+.card a {
     color: black;
     text-decoration: 1px black;
     margin: auto;
@@ -54,18 +54,18 @@ a:hover {
     text-align: center;
 }
 
-.card-block a:hover {
+.card a:hover {
     border: 1px solid black;
     width: 80px;
     text-align: center;
     text-decoration: none;
 }
-.card-block a:active {
+.card a:active {
     background-color: black;
     color: white;
 }
 
-/* .card-block {
+.card {
     width: 200px;
     height: 350px;
     box-shadow: black;
@@ -73,14 +73,14 @@ a:hover {
     background-color: whitesmoke;
     border: none;
     text-align: center;
-} */
+}
 
 #toolbar-content a {
-    margin: 20px;
+    margin: 50px;
 }
 
 #toolbar {
-    margin-left: 300px;
+    margin-left: 400px;
     text-align: center;
 }
 
@@ -110,7 +110,7 @@ a:hover {
     height: 200px;
 }
 
-.container-product-merk {
+#container {
     width: 1000px;
     margin: auto;
     display: flex;
