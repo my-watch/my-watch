@@ -29,7 +29,7 @@
             rel="stylesheet"
             href="path/to/font-awesome/css/font-awesome.min.css"
         />
-        <link rel="stylesheet" href="./assets/css/shopping-cart.css" />
+        <link rel="stylesheet" href="./assets/css/checkout.css" />
         <link rel="stylesheet" href="./assets/css/index.css" />
     </head>
     <body>
@@ -66,7 +66,7 @@
                 <!-- Right -->
                 <ul class="navbar-nav ml-auto">
                     <li class="nav-item active">
-                        <a href="#!" class="nav-link waves-effect">
+                        <a href="index.html" class="nav-link waves-effect">
                             Home
                         </a>
                     </li>
@@ -134,8 +134,8 @@
                     <tr>
                         <th style="width: 50%;">Product</th>
                         <th style="width: 10%;">Price</th>
-                        <th style="width: 8%;">Quantity</th>
-                        <th style="width: 22%;" class="text-center">
+                        <th style="width: 8%;" class="quantity">Quantity</th>
+                        <th style="width: 22%;" class="text-center sub-total">
                             Subtotal
                         </th>
                         <th style="width: 10%;"></th>
@@ -163,39 +163,33 @@
                             </div>
                         </td>
                         <td data-th="Price">Rp.765.000</td>
-                        <td data-th="Quantity">
+                        <td data-th="Quantity" class="quantity">
                             <input
                                 type="number"
                                 class="form-control text-center"
                                 value="1"
                             />
                         </td>
-                        <td data-th="Subtotal" class="text-center">
+                        <td data-th="Subtotal" class="text-center sub-total">
                             Rp.765.000.00
-                        </td>
-                        <td class="actions" data-th="">
-                            <button class="btn btn-info btn-sm">
-                                <i class="fa fa-refresh"></i>
-                            </button>
-                            <button class="btn btn-danger btn-sm">
-                                <i class="fa fa-trash-o"></i>
-                            </button>
                         </td>
                     </tr>
                 </tbody>
                 <tfoot>
-                    <tr class="visible-xs">
+                    <tr class="footer-table visible-xs">
                         <td class="text-center">
                             <strong>Total Rp.765.000.00</strong>
                         </td>
                     </tr>
                     <tr>
-                        <td colspan="2" class="hidden-xs"></td>
+                        <td colspan="2" class="add-space hidden-xs"></td>
                         <td class="hidden-xs text-center">
-                            <strong>Total Rp 765.000.00</strong>
+                            <strong></strong>
                         </td>
                         <td>
-                            <a href="" class="btn btn-dark btn-block bg-black"
+                            <a
+                                href=""
+                                class="btn-checkout btn btn-dark btn-block bg-black"
                                 >Checkout <i class="fa fa-angle-right"></i
                             ></a>
                         </td>
