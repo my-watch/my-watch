@@ -10,11 +10,15 @@ async function showCart() {
     try {
         let response = await fetch(endpoint, options);
         let results = await response.json();
-
+        let total = 0;
+        for (i = 0; i < results.length; i++) {
+            total += results[i].price;
+        }
+        let totalDisplay = document.getElementById("total-cart");
+        totalDisplay.innerHTML = `Total Belanja Anda Rp. ${total}`;
         results.forEach((getData, data) => {
             let display = document.getElementById("body-cart");
             let cards = document.createElement("tr");
-            console.log(results);
 
             cards.innerHTML = `
      <td data-th="Product">
@@ -23,18 +27,18 @@ async function showCart() {
                 <img
                     src="${getData.img}"
                     alt="..."
-                    class="img-thumbelnail"
+                    class="img-thumbnail"
                 />
             </div>
             <div class="col-sm-10">
                 
                 <p>
-                    ${getData.name}
+                    ${getData.productName}
                 </p>
             </div>
         </div>
     </td>
-    <td data-th="Price">${getData.price}</td>
+    <td data-th="Price">Rp. ${getData.price}</td>
     <td data-th="Quantity" class="quantity">
         <input
             type="text"
