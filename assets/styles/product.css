@@ -31,11 +31,12 @@ a:hover {
 
 #toolbar-content {
     display: flex;
+    margin: auto;
 }
 
 #toolbar-content #drop {
     margin: auto;
-    margin-left: 50px;
+    margin-left: 0px;
 }
 
 .space {
@@ -80,7 +81,7 @@ a:hover {
 }
 
 #toolbar {
-    margin-left: 400px;
+    margin-left: 0px;
     text-align: center;
 }
 
