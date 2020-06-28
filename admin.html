@@ -3,7 +3,7 @@
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Product</title>
+        <title>Admin</title>
         <link
             href="https://fonts.googleapis.com/css2?family=Saira+Condensed&display=swap"
             rel="stylesheet"
@@ -59,35 +59,20 @@
                             Home
                         </a>
                     </li>
-                    <div class="dropdown open">
+                     <div class="dropdown open">
                         <a
-                            class="nav-item active bg-white dropdown-toggle nav-link waves-effect"
+                            class="nav-item active bg-white nav-link waves-effect"
                             type="button"
                             id="triggerId"
                             data-toggle="dropdown"
                             aria-haspopup="true"
                             aria-expanded="false"
+                            href="./product.html"
                         >
                             Product</a
                         >
-                        <div class="dropdown-menu" aria-labelledby="triggerId">
-                            <a class="dropdown-item" href="./product.html"
-                                >Christian Ardyen</a
-                            >
-                            <a class="dropdown-item" href="./merk2.html"
-                                >Jean Alexis</a
-                            >
-                            <a class="dropdown-item" href="./merk3.html"
-                                >Alexandra Christi</a
-                            >
-                            <a class="dropdown-item" href="./merk4.html"
-                                >Jims Honey</a
-                            >
-                            <a class="dropdown-item" href="./merk5.html"
-                                >Michael Kors</a
-                            >
-                        </div>
                     </div>
+
 
                     <li class="nav-item active">
                         <a href="#!" class="nav-link waves-effect">
@@ -121,103 +106,64 @@
             <!-- Links -->
         </nav>
 
-        <div class="img">
+        <!-- <div class="img">
             <img src="./assets/img/logo/header img.jpg" alt="header-img" />
-        </div>
+        </div> -->
 
         <div class="text">
-            <h2>BUY 2 GET 1</h2>
+            <h2>SELL YOUR PRODUCT</h2>
             <div class="space"></div>
         </div>
 
         <br />
         <nav class="navbar navbar-light bg-light" id="toolbar">
             <span class="navbar-text" id="toolbar-content">
-                Filter From Category
-                <div class="dropdown open" id="drop">
-                    <a
-                        class="nav-item active bg-white dropdown-toggle nav-link waves-effect"
-                        type="button"
-                        id="triggerId"
-                        data-toggle="dropdown"
-                        aria-haspopup="true"
-                        aria-expanded="false"
-                    >
-                        Product</a
-                    >
-                    <div class="dropdown-menu" aria-labelledby="triggerId">
-                        <a class="dropdown-item" href="./product.html"
-                            >Christian Ardyen</a
-                        >
-                        <a class="dropdown-item" href="./merk2.html"
-                            >Jean Alexis</a
-                        >
-                        <a class="dropdown-item" href="./merk3.html"
-                            >Alexandra Christi</a
-                        >
-                        <a class="dropdown-item" href="./merk4.html"
-                            >Jims Honey</a
-                        >
-                        <a class="dropdown-item" href="./merk5.html"
-                            >Michael Kors</a
-                        >
-                    </div>
-                </div>
+                <a href="./product.html">Elegant</a>
+                <a href="./merk2.html">Classic</a>
+                <a href="./merk3.html">Prestigious</a>
             </span>
         </nav>
         <br />
-        <div class="container-product-merk">
-            <div class="card">
-                <img src="./assets/img/michael/michael1.jpg" alt="watch" />
-                <div class="card-text">
-                    <p>Michael Kors 6560</p>
-                    <h5>Rp 1.900.000</h5>
-                    <a href="#">Checkout</a>
+
+        <div id="container-sell">
+            <div id="sell">
+                <div>
+                    <img src="./assets/img/logo/sell-img.jpg" alt="logo" />
+                </div>
+                <div>
+                    <div class="input">
+                        <div>
+                            <label for="name">Product Name</label>
+                        </div>
+                        <input type="text" id="name" />
+                    </div>
+                    <div class="input">
+                        <div>
+                            <label for="price">Product Price</label>
+                        </div>
+                        <input type="number" id="price" />
+                    </div>
+                    <div class="input">
+                        <div>
+                            <label for="img">Image Link</label>
+                        </div>
+                        <input type="text" id="img" />
+                    </div>
                 </div>
             </div>
-            <div class="card">
-                <img src="./assets/img/michael/michael2.jpg" alt="watch" />
-                <div class="card-text">
-                    <p>Michael Kors 6367</p>
-                    <h5>Rp 2.050.000</h5>
-                    <a href="#">Checkout</a>
-                </div>
-            </div>
-            <div class="card">
-                <img src="./assets/img/michael/michael3.jpg" alt="watch" />
-                <div class="card-text">
-                    <p>Michael Kors 5896</p>
-                    <h5>Rp 896.000</h5>
-                    <a href="#">Checkout</a>
-                </div>
-            </div>
-            <div class="card">
-                <img src="./assets/img/michael/michael4.jpg" alt="watch" />
-                <div class="card-text">
-                    <p>Michael Kors 5550</p>
-                    <h5>Rp 2.000.000</h5>
-                    <a href="#">Checkout</a>
-                </div>
-            </div>
-            <div class="card">
-                <img src="./assets/img/michael/michael5.jpg" alt="watch" />
-                <div class="card-text">
-                    <p>Michael Kors 5354</p>
-                    <h5>Rp 1.800.000</h5>
-                    <a href="#">Checkout</a>
-                </div>
+            <div>
+                <button type="submit" class="btn btn-dark" id="btn">
+                    SELL
+                </button>
             </div>
         </div>
 
-        <div class="klik">
-            <a href="./merk4.html">Prev</a>Page 5 of 5<a href="#">Next</a>
-        </div>
         <div class="info">
             <div class="link">
-                <a href="#">Home</a>
-                <a href="#">Login</a>
+                <a href="./index.html">Home</a>
+                <a href="./login_customer.html">Login</a>
                 <a href="./product.html">Product</a>
-                <a href="#">Checkout</a>
+                <a href="./checkout.html">Checkout</a>
             </div>
 
             <div class="link">
@@ -272,5 +218,6 @@
             integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
             crossorigin="anonymous"
         ></script>
+        <script src="./assets/js/admin.js" type="module"></script>
     </body>
 </html>
