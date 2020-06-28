@@ -235,6 +235,7 @@ async function shows() {
             let btn = document.getElementById(`${i}`);
             btn.addEventListener("click", add);
             async function add() {
+                 swal("Success", "Your item has been added to Cart!", "success");
                 try {
                     let productName = resultShows[i - 1].name;
                     let price = resultShows[i - 1].price;
