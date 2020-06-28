@@ -2,17 +2,6 @@
     margin: 0;
     padding: 0;
 }
-/* .show-cart li {
-    display: flex;
-}
-.card {
-    margin-bottom: 20px;
-}
-.card-img-top {
-    width: 200px;
-    height: 200px;
-    align-self: center;
-} */
 
 .text1 {
     margin: auto;
@@ -188,4 +177,26 @@ footer img {
 .klik a:active {
     background-color: black;
     color: white;
+}
+
+#container-sell {
+    width: 400px;
+    margin: auto;
+}
+#sell {
+    width: 400px;
+    margin: auto;
+    display: flex;
+}
+
+.input input {
+    width: 200px;
+    margin: 20px 60px 10px 0;
+    /* text-align: center; */
+}
+
+#btn {
+    width: 200px;
+    margin-top: 30px;
+    margin-left: 120px;
 }

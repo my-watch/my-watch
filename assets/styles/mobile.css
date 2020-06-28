@@ -28,4 +28,27 @@
     .link {
         margin-top: 20px;
     }
+    #container-sell {
+        width: 300px;
+        margin: auto;
+        padding: 20px;
+    }
+    #sell {
+        margin: auto;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .input input label {
+        width: 100px;
+        margin: auto;
+        padding: 50px;
+    }
+
+    #btn {
+        width: 100px;
+        /* margin-top: 30px;
+        margin-left: 120px; */
+        margin: 20px;
+    }
 }

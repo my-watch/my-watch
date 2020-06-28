@@ -179,36 +179,90 @@ let watch = [
     },
 ];
 
-let button = document.getElementsByClassName("btn btn-light");
-console.log(button.length);
+async function shows() {
+    try {
+        let urlShows = `https://5ef168c41faf160016b4d5af.mockapi.io/api/data`;
+        let optionShows = {
+            method: "GET",
+            headers: {
+                "Content-type": "application/json",
+            },
+        };
 
-for (let i = 1; i <= button.length; i++) {
-    let btn = document.getElementById(`${i}`);
-    btn.addEventListener("click", add);
-    async function add() {
-        try {
-            let productName = watch[i - 1].name;
-            let price = watch[i - 1].price;
-            let img = watch[i - 1].img;
+        let responseShows = await fetch(urlShows, optionShows);
+        let resultShows = await responseShows.json();
+        console.log(resultShows);
+        if (resultShows.length > 35) {
+            for (let j = 36; j < resultShows.length + 1; j++) {
+                let container = document.getElementById("container");
+                let div = document.createElement("div");
+                div.setAttribute("class", "card");
 
-            let data = {
-                productName,
-                price,
-                img,
-            };
-            let url = `https://5ef168c41faf160016b4d5af.mockapi.io/api/Product`;
-            let options = {
-                method: "POST",
-                headers: {
-                    "Content-type": "application/json",
-                },
-                body: JSON.stringify(data),
-            };
-            let response = await fetch(url, options);
-            let result = await response.json();
-            console.log(result);
-        } catch (error) {
-            console.log(error);
+                let img = document.createElement("img");
+                img.setAttribute(
+                    "src",
+                    `${resultShows[resultShows.length - 1].img}`
+                );
+
+                let divText = document.createElement("div");
+                divText.setAttribute("class", "card-text");
+
+                let resultPrice = resultShows[resultShows.length - 1].price;
+                var format = new Intl.NumberFormat("Id-ID", {
+                    style: "currency",
+                    currency: "IDR",
+                });
+                let productPrice = format.format(resultPrice);
+
+                divText.innerHTML = ` <p>${
+                    resultShows[resultShows.length - 1].name
+                }</p>
+                     <h5>${productPrice}</h5>
+                     <button type="button" id="${j}" class="btn btn-light">
+                         AddChart
+                     </button>`;
+
+                container.appendChild(div);
+                div.appendChild(img);
+                div.appendChild(divText);
+                console.log(container);
+            }
         }
+
+        let button = document.getElementsByClassName("btn btn-light");
+        console.log(button.length);
+        for (let i = 1; i <= button.length; i++) {
+            let btn = document.getElementById(`${i}`);
+            btn.addEventListener("click", add);
+            async function add() {
+                try {
+                    let productName = resultShows[i - 1].name;
+                    let price = resultShows[i - 1].price;
+                    let img = resultShows[i - 1].img;
+
+                    let data = {
+                        productName,
+                        price,
+                        img,
+                    };
+                    let url = `https://5ef168c41faf160016b4d5af.mockapi.io/api/Product`;
+                    let options = {
+                        method: "POST",
+                        headers: {
+                            "Content-type": "application/json",
+                        },
+                        body: JSON.stringify(data),
+                    };
+                    let response = await fetch(url, options);
+                    let result = await response.json();
+                    console.log(result);
+                } catch (error) {
+                    console.log(error);
+                }
+            }
+        }
+    } catch (error) {
+        console.log(error);
     }
 }
+shows();
