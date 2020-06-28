@@ -29,11 +29,8 @@
         <link rel="stylesheet" href="./assets/styles/index.css" />
     </head>
     <body>
-        <section class="header-1">
-            <h6>Gratis Ongkir Sampai Rp. 20.000 + Free Box</h6>
-        </section>
         <!-- Navbar -->
-        <nav class="navbar navbar-expand-md navbar-light">
+        <nav class="navbar navbar-expand-md navbar-light bg-light fixed-top">
             <a class="navbar-brand" href="#!">
                 <img
                     src="./assets/img/logo.png"
@@ -66,22 +63,14 @@
                             Home
                         </a>
                     </li>
-                    <div class="dropdown open">
-                        <a
-                            class="nav-item active bg-white nav-link waves-effect"
-                            type="button"
-                            id="triggerId"
-                            data-toggle="dropdown"
-                            aria-haspopup="true"
-                            aria-expanded="false"
-                            href="./product.html"
-                        >
-                            Product</a
-                        >
-                    </div>
+                    <li class="nav-item active">
+                        <a href="product.html" class="nav-link waves-effect">
+                            Product
+                        </a>
+                    </li>
 
                     <li class="nav-item active">
-                        <a href="#!" class="nav-link waves-effect">
+                        <a href="#contact" class="nav-link waves-effect">
                             Contact
                         </a>
                     </li>
@@ -95,13 +84,16 @@
                         </a>
                     </li>
                     <li class="nav-item active">
-                        <a href="./register.html" class="nav-link waves-effect">
+                        <a
+                            href="login_customer.html"
+                            class="nav-link waves-effect"
+                        >
                             Sign in
                         </a>
                     </li>
                     <li class="nav-item pl-2 mb-2 mb-md-0">
                         <a
-                            href="#!"
+                            href="register.html"
                             type="button"
                             class="btn btn-outline-info btn-md btn-rounded btn-navbar waves-effect waves-dark"
                             >Sign up</a
@@ -109,8 +101,8 @@
                     </li>
                 </ul>
             </div>
-            <!-- Links -->
         </nav>
+        <!-- endnav -->
 
         <!-- main menu-->
         <div id="myCarousel" class="carousel slide" data-ride="carousel">
