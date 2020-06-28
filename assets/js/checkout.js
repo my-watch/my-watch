@@ -1,3 +1,12 @@
+// add rupiah Function
+String.prototype.toRupiah = function () {
+    return Number(this).toLocaleString("id-ID", {
+        style: "currency",
+        currency: "IDR",
+        minimumFractionDigits: 2,
+    });
+};
+
 let endpoint = `https://5ef168c41faf160016b4d5af.mockapi.io/api/Product`;
 let options = {
     method: "GET",
@@ -15,7 +24,9 @@ async function showCart() {
             total += results[i].price;
         }
         let totalDisplay = document.getElementById("total-cart");
-        totalDisplay.innerHTML = `Total Belanja Anda Rp. ${total}`;
+        totalDisplay.innerHTML = `Total Belanja Anda  ${total
+            .toString()
+            .toRupiah()}`;
         results.forEach((getData, data) => {
             let display = document.getElementById("body-cart");
             let cards = document.createElement("tr");
@@ -38,7 +49,7 @@ async function showCart() {
             </div>
         </div>
     </td>
-    <td data-th="Price">Rp. ${getData.price}</td>
+    <td data-th="Price"> ${getData.price.toString().toRupiah()}</td>
     <td data-th="Quantity" class="quantity">
         <input
             type="text"
@@ -47,7 +58,7 @@ async function showCart() {
         />
     </td>
     <td data-th="Subtotal" class="text-center sub-total">
-        Rp. ${getData.price}
+        ${getData.price.toString().toRupiah()}
     </td>
     <td data-th="" class="text-center">
     <button id="btnDel" type="button" class="btn btn-danger">Hapus<i class="fa fa-trash" aria-hidden="true"></i>
