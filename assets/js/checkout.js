@@ -19,16 +19,7 @@ async function showCart() {
     try {
         let response = await fetch(endpoint, options);
         let results = await response.json();
-        let total = 0;
-        for (i = 0; i < results.length; i++) {
-            total += results[i].price;
-        }
-        let totalDisplay = document.getElementById("total-cart");
-        totalDisplay.innerHTML = `Total Belanja Anda  ${total
-            .toString()
-            .toRupiah()}`;
-        let idAdd = 0;
-
+        showTotal();
         results.map((getData, data) => {
             let display = document.getElementById("body-cart");
             let cards = document.createElement("tr");
@@ -77,6 +68,10 @@ async function showCart() {
                     `.data-cart${getData.id}`
                 );
                 cartList.innerHTML = null;
+                const totalDisplay = document.getElementById("total-cart");
+                showTotal();
+                totalDisplay.innerHTML = null;
+                showTotal();
             }
             let btnDel = document.getElementById(`btnDel${getData.id}`);
             btnDel.addEventListener("click", function () {
@@ -94,6 +89,21 @@ async function showCart() {
 }
 
 showCart();
+
+async function showTotal() {
+    try {
+        let response = await fetch(endpoint, options);
+        let results = await response.json();
+        let total = 0;
+        for (i = 0; i < results.length; i++) {
+            total += results[i].price;
+        }
+        const totalDisplay = document.getElementById("total-cart");
+        totalDisplay.innerHTML = `${total.toString().toRupiah()}`;
+    } catch (error) {
+        console.log(error);
+    }
+}
 
 function deleteCart(id) {
     let putMethod = {
