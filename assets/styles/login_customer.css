@@ -42,3 +42,13 @@ img {
 .form-register {
     border: 0.1px solid rgb(96, 243, 96);
 }
+
+footer {
+    padding: 30px;
+    margin-left: 100px;
+}
+
+footer img {
+    margin-right: 20px;
+    margin-bottom: 15px;
+}
