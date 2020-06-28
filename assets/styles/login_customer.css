@@ -6,16 +6,21 @@ body {
     padding: 0;
 }
 
-.h3,
+body {
+    background-image: url(/assets/img/doodles.png);
+    background-repeat: repeat;
+}
+
+.h5,
+.h6,
 .btn {
     font-family: 'Titillium Web', sans-serif;
 }
 
-.form-group,
-.form-text,
-.title_login {
+.form-group {
     font-family: 'Noto Sans JP', sans-serif;
 }
+
 
 .container {
     margin-top: 50px;
@@ -35,18 +40,5 @@ img {
 }
 
 .form-register {
-    border: 0.1px solid rgb(244, 250, 244);
-    max-width: 400px;
-}
-
-@media (max-width: 576px) {
-    img {
-        display: none;
-    }
-
-    .form-register {
-        max-width: 400px;
-        padding-left: 0px;
-        padding-right: 0px;
-    }
+    border: 0.1px solid rgb(96, 243, 96);
 }
