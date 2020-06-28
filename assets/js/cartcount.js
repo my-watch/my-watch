@@ -17,3 +17,5 @@ async function showCartCount() {
 }
 
 showCartCount();
+
+setInterval(showCartCount, 1000);
