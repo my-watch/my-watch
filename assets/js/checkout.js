@@ -27,7 +27,7 @@ async function showCart() {
                 <img
                     src="${getData.img}"
                     alt="..."
-                    class="img-thumbnail"
+                    style="width :80px; height:80px;"
                 />
             </div>
             <div class="col-sm-10">
@@ -49,6 +49,10 @@ async function showCart() {
     <td data-th="Subtotal" class="text-center sub-total">
         Rp. ${getData.price}
     </td>
+    <td data-th="" class="text-center">
+    <button id="btnDel" type="button" class="btn btn-danger">Hapus<i class="fa fa-trash" aria-hidden="true"></i>
+    </button>
+    </td>
 `;
             display.appendChild(cards);
         });
@@ -58,3 +62,26 @@ async function showCart() {
 }
 
 showCart();
+
+// add delete cart
+function deleteCart(id) {
+    let url = `https://5ef168c41faf160016b4d5af.mockapi.io/api/Product/${id}`;
+
+    let options = {
+        method: "DELETE",
+        headers: {
+            "Content-type": "application/json",
+        },
+    };
+
+    fetch(url, options)
+        .then((response) => {
+            console.log(response);
+            response.json();
+        })
+        .then((result) => {})
+        .catch((error) => console.error(error));
+}
+
+let btnDel = document.getElementById("btnDel");
+btnDel.addEventListener("click", deleteCart);
