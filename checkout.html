@@ -25,10 +25,7 @@
             rel="stylesheet"
             href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css"
         />
-        <link
-            rel="stylesheet"
-            href="path/to/font-awesome/css/font-awesome.min.css"
-        />
+
         <link rel="stylesheet" href="./assets/styles/checkout.css" />
         <link rel="stylesheet" href="./assets/styles/index.css" />
     </head>
@@ -141,44 +138,14 @@
                         <th style="width: 10%;"></th>
                     </tr>
                 </thead>
-                <tbody>
-                    <tr>
-                        <td data-th="Product">
-                            <div class="row">
-                                <div class="col-sm-2 hidden-xs">
-                                    <img
-                                        src="http://placehold.it/80x80"
-                                        alt="..."
-                                        class="img-responsive"
-                                    />
-                                </div>
-                                <div class="col-sm-10">
-                                    <h4 class="nomargin">Product 1</h4>
-                                    <p>
-                                        Lorem ipsum dolor sit amet consectetur
-                                        adipisicing elit. Perferendis rerum non
-                                        ad consequuntur, explicabo ratione.
-                                    </p>
-                                </div>
-                            </div>
-                        </td>
-                        <td data-th="Price">Rp.765.000</td>
-                        <td data-th="Quantity" class="quantity">
-                            <input
-                                type="number"
-                                class="form-control text-center"
-                                value="1"
-                            />
-                        </td>
-                        <td data-th="Subtotal" class="text-center sub-total">
-                            Rp.765.000.00
-                        </td>
-                    </tr>
-                </tbody>
+                <tbody id="body-cart"></tbody>
+
                 <tfoot>
                     <tr class="footer-table visible-xs">
                         <td class="text-center">
-                            <strong>Total Rp.765.000.00</strong>
+                            <strong>
+                                Total Belanja Anda <span id="total-cart"></span
+                            ></strong>
                         </td>
                     </tr>
                     <tr>
@@ -189,6 +156,7 @@
                         <td>
                             <a
                                 href=""
+                                id="btnDel1"
                                 class="btn-checkout btn btn-dark btn-block bg-black"
                                 >Checkout <i class="fa fa-angle-right"></i
                             ></a>
@@ -200,6 +168,7 @@
 
         <!-- Optional JavaScript -->
         <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+        <script src="./assets/js/checkout.js"></script>
         <script
             src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
             integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
