@@ -10,9 +10,9 @@ String.prototype.toRupiah = function () {
 let endpoint = `https://5ef168c41faf160016b4d5af.mockapi.io/api/Product`;
 let options = {
     method: "GET",
-    // headers: {
-    //     "Content-type": "applications/json",
-    // },
+    headers: {
+        "Content-type": "applications/json",
+    },
 };
 
 async function showCart() {
@@ -23,11 +23,14 @@ async function showCart() {
         for (i = 0; i < results.length; i++) {
             total += results[i].price;
         }
+        console.log(total);
         let totalDisplay = document.getElementById("total-cart");
         totalDisplay.innerHTML = `Total Belanja Anda  ${total
             .toString()
             .toRupiah()}`;
-        results.forEach((getData, data) => {
+        let idAdd = 0;
+
+        results.map((getData, data) => {
             let display = document.getElementById("body-cart");
             let cards = document.createElement("tr");
 
@@ -61,12 +64,22 @@ async function showCart() {
         ${getData.price.toString().toRupiah()}
     </td>
     <td data-th="" class="text-center">
-    <button id="btnDel" type="button" class="btn btn-danger">Hapus<i class="fa fa-trash" aria-hidden="true"></i>
+    <button id="btnDel${
+        getData.id
+    }" type="button" class="btn btn-danger">Hapus<i class="fa fa-trash" aria-hidden="true"></i>
     </button>
     </td>
 `;
             display.appendChild(cards);
+            //delete cart
+
+            let btnDel = document.getElementById(`btnDel${getData.id}`);
+            btnDel.addEventListener("click", function () {
+                deleteCart(getData.id);
+            });
         });
+
+        // batas
     } catch (error) {
         console.log(error);
     }
@@ -74,25 +87,13 @@ async function showCart() {
 
 showCart();
 
-// add delete cart
 function deleteCart(id) {
-    let url = `https://5ef168c41faf160016b4d5af.mockapi.io/api/Product/${id}`;
-
-    let options = {
+    let putMethod = {
         method: "DELETE",
-        headers: {
-            "Content-type": "application/json",
-        },
     };
-
-    fetch(url, options)
-        .then((response) => {
-            console.log(response);
-            response.json();
-        })
-        .then((result) => {})
-        .catch((error) => console.error(error));
+    let urlD = `https://5ef168c41faf160016b4d5af.mockapi.io/api/Product/${id}`;
+    fetch(urlD, putMethod)
+        .then((res) => res.json())
+        .then((res) => console.log(res))
+        .catch((err) => console.log(err));
 }
-
-let btnDel = document.getElementById("btnDel");
-btnDel.addEventListener("click", deleteCart);
