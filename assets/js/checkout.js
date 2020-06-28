@@ -23,7 +23,6 @@ async function showCart() {
         for (i = 0; i < results.length; i++) {
             total += results[i].price;
         }
-        console.log(total);
         let totalDisplay = document.getElementById("total-cart");
         totalDisplay.innerHTML = `Total Belanja Anda  ${total
             .toString()
@@ -34,8 +33,9 @@ async function showCart() {
             let display = document.getElementById("body-cart");
             let cards = document.createElement("tr");
 
+            cards.classList.add(`data-cart${getData.id}`);
             cards.innerHTML = `
-     <td data-th="Product">
+     <td data-th="Product" >
         <div class="row">
             <div class="col-sm-2 hidden-xs">
                 <img
@@ -66,16 +66,24 @@ async function showCart() {
     <td data-th="" class="text-center">
     <button id="btnDel${
         getData.id
-    }" type="button" class="btn btn-danger">Hapus<i class="fa fa-trash" aria-hidden="true"></i>
+    }" type="submit" class="btn btn-danger">Hapus<i class="fa fa-trash" aria-hidden="true"></i>
     </button>
     </td>
 `;
             display.appendChild(cards);
             //delete cart
-
+            function clear() {
+                let cartList = document.querySelector(
+                    `.data-cart${getData.id}`
+                );
+                cartList.innerHTML = null;
+            }
             let btnDel = document.getElementById(`btnDel${getData.id}`);
             btnDel.addEventListener("click", function () {
-                deleteCart(getData.id);
+                if (confirm("Apakah anda yakin?")) {
+                    setTimeout(deleteCart(getData.id), 100);
+                    setTimeout(clear(), 3000);
+                }
             });
         });
 
