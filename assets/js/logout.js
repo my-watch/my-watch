@@ -6,24 +6,24 @@ let logoutBtn = document.getElementById("btn-logout");
 logoutBtn.addEventListener("click", logout);
 
 function logout() {
-  swal({
-    title: "Are you sure?",
-    // text: "",
-    icon: "warning",
-    buttons: true,
-    dangerMode: true,
-  }).then((willDelete) => {
-    if (willDelete) {
-      swal("Logout Succes!", {
-        icon: "success",
-      });
-      localStorage.removeItem("user");
-      setTimeout(function () {
-        window.location.reload();
-      }, 3000);
-    }
-    // else {
-    //   swal("Your imaginary file is safe!");
-    // }
-  });
+    swal({
+        title: "Are you sure?",
+        // text: "",
+        icon: "warning",
+        buttons: true,
+        dangerMode: true,
+    }).then((willDelete) => {
+        if (willDelete) {
+            swal("Logout Succes!", {
+                icon: "success",
+            });
+            localStorage.removeItem("user");
+            setTimeout(function () {
+                window.location.href = "index.html";
+            }, 3000);
+        }
+        // else {
+        //   swal("Your imaginary file is safe!");
+        // }
+    });
 }

@@ -54,11 +54,6 @@ async function redirect() {
 }
 redirect();
 
-let btnDel = document.getElementById("btn-payment");
-btnDel.addEventListener("click", function () {
-    window.location.replace("index.html");
-});
-
 function deleteCart(id) {
     let putMethod = {
         method: "DELETE",
