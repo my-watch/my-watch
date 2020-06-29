@@ -5,6 +5,12 @@ let logUser = JSON.parse(localStorage.getItem("user"));
 
 let position = document.getElementById("profile");
 
-let card = document.createElement("p");
-card.innerHTML = `${logUser[0].fullname}`;
-position.appendChild(card);
+position.innerHTML = `${logUser[0].fullname}`;
+
+let signUp = document.getElementById("btn-logout");
+
+if (logUser != null) {
+  signUp.removeAttribute("href");
+  signUp.setAttribute("id", "logout");
+  signUp.innerHTML = `Logout`;
+}
