@@ -64,3 +64,6 @@ function deleteCart(id) {
         .then((res) => console.log(res))
         .catch((err) => console.log(err));
 }
+
+let firstName = document.getElementById("firstName").value;
+let email = document.getElementById("email").value;
