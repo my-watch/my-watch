@@ -26,6 +26,12 @@ async function register() {
     // If registred
     if (fullname === "" && email === "" && password === "") {
       swal("Form must be filled!", "", "warning");
+    } else if (fullname === "") {
+      swal("Field full name must be filled!", "", "warning");
+    } else if (email === "" && password === "") {
+      swal("Field email must be filled!", "", "warning");
+    } else if (password === "") {
+      swal("Field password must be filled!", "", "warning");
     } else if (registeredUser.length > 0 && email === email) {
       swal("You are already registered!", "", "warning");
     } else {
