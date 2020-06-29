@@ -1,0 +1,567 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Product</title>
+        <link
+            href="https://fonts.googleapis.com/css2?family=Saira+Condensed&display=swap"
+            rel="stylesheet"
+        />
+        <link rel="stylesheet" href="./assets/styles/product.css" />
+        <link rel="stylesheet" href="./assets/styles/mobile.css" />
+        <!-- Bootstrap CSS -->
+        <link
+            rel="stylesheet"
+            href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+            integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+            crossorigin="anonymous"
+        />
+        <link
+            rel="stylesheet"
+            href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css"
+        />
+
+        <link rel="stylesheet" href="./assets/styles/index.css" />
+
+        <link
+            rel="stylesheet"
+            href="https://cdn.jsdelivr.net/npm/sweetalert2@7.12.15/dist/sweetalert2.min.css"
+        />
+    </head>
+    <body>
+        <nav class="navbar navbar-expand-md navbar-light bg-light fixed-top">
+            <a class="navbar-brand" href="#!">
+                <img
+                    src="./assets/img/logo.png"
+                    height="80"
+                    alt="MYWATCH logo"
+                />
+            </a>
+
+            <!-- Collapse button -->
+            <button
+                class="navbar-toggler"
+                type="button"
+                data-toggle="collapse"
+                data-target="#basicExampleNav1"
+                aria-controls="basicExampleNav1"
+                aria-expanded="false"
+                aria-label="Toggle navigation"
+            >
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <!-- Breadcrumbs -->
+
+            <!-- Links -->
+            <div class="collapse navbar-collapse" id="basicExampleNav1">
+                <!-- Right -->
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item active">
+                        <a href="./profile.html" class="nav-link waves-effect">
+                            Home
+                        </a>
+                    </li>
+                    <li class="nav-item active">
+                        <a href="product2.html" class="nav-link waves-effect">
+                            Product
+                        </a>
+                    </li>
+
+                    <li class="nav-item active">
+                        <a href="#contact" class="nav-link waves-effect">
+                            Contact
+                        </a>
+                    </li>
+                    <li class="nav-item active">
+                        <a href="checkout2.html" class="nav-link waves-effect">
+                            <i
+                                class="fa fa-shopping-cart"
+                                aria-hidden="true"
+                            ></i>
+                            Bayar Yuk!<span id="cart-count"></span>
+                        </a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link waves-effect">
+                            <span id="profile"></span>
+                        </a>
+                    </li>
+                    <li class="nav-item pl-2 mb-2 mb-md-0">
+                        <a
+                            id="btn-logout"
+                            type="button"
+                            class="btn btn-outline-info btn-md btn-rounded btn-navbar waves-effect waves-dark"
+                            >Logout</a
+                        >
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <!-- endnav -->
+        <div class="img">
+            <img src="./assets/img/logo/header img.jpg" alt="header-img" />
+        </div>
+
+        <br />
+        <nav class="navbar navbar-light bg-light" id="toolbar">
+            <span class="navbar-text" id="toolbar-content">
+                <p>Elegant</p>
+                <p>Classic</p>
+                <p>Prestigious</p>
+            </span>
+        </nav>
+        <br />
+        <div id="container">
+            <div class="card">
+                <img src="./assets/img/ardan/arden1.jpg" alt="watch" />
+                <div class="card-text">
+                    <p>Christyan Arden CA8075</p>
+                    <h5>Rp365.000,00</h5>
+                    <button type="button" id="1" class="btn btn-light">
+                        AddChart
+                    </button>
+                </div>
+            </div>
+            <div class="card">
+                <img src="./assets/img/ardan/arden2.jpg" alt="watch" />
+                <div class="card-text">
+                    <p>Christyan Arden CA2685</p>
+                    <h5>Rp195.000,00</h5>
+                    <button type="button" id="2" class="btn btn-light">
+                        AddChart
+                    </button>
+                </div>
+            </div>
+            <div class="card">
+                <img
+                    src="./assets/img/ardan/arden3.jpg"
+                    alt="watch"
+                    style="height: 200px;"
+                />
+                <div class="card-text">
+                    <p>
+                        Christyan Arden FALANA
+                    </p>
+                    <h5>Rp299.000,00</h5>
+                    <button type="button" id="3" class="btn btn-light">
+                        AddChart
+                    </button>
+                </div>
+            </div>
+            <div class="card">
+                <img src="./assets/img/ardan/arden4.jpg" alt="watch" />
+                <div class="card-text">
+                    <p>
+                        Christyan Arden OBELIUS
+                    </p>
+                    <h5>Rp299.000,00</h5>
+                    <button type="button" id="4" class="btn btn-light">
+                        AddChart
+                    </button>
+                </div>
+            </div>
+            <div class="card">
+                <img src="./assets/img/ardan/arden5.jpg" alt="watch" />
+                <div class="card-text">
+                    <p>
+                        Christyan Arden OWEN
+                    </p>
+                    <h5>Rp 299.000,00</h5>
+                    <button type="button" id="5" class="btn btn-light">
+                        AddChart
+                    </button>
+                </div>
+            </div>
+            <div class="card">
+                <img src="./assets/img/ardan/arden6.jpg" alt="watch" />
+                <div class="card-text">
+                    <p>
+                        Christyan Arden LENORE
+                    </p>
+                    <h5>Rp 189.000,00</h5>
+                    <button type="button" id="6" class="btn btn-light">
+                        AddChart
+                    </button>
+                </div>
+            </div>
+            <div class="card">
+                <img src="./assets/img/ardan/arden7.jpg" alt="watch" />
+                <div class="card-text">
+                    <p>
+                        Christyan Arden CA009
+                    </p>
+                    <h5>Rp 270.000,00</h5>
+                    <button type="button" id="7" class="btn btn-light">
+                        AddChart
+                    </button>
+                </div>
+            </div>
+            <br />
+            <div class="card">
+                <img src="./assets/img/jean/jean1.jpg" alt="watch" />
+                <div class="card-text">
+                    <p>Jean Alexis Stein</p>
+                    <h5>RP 640.000,00</h5>
+                    <button type="button" id="8" class="btn btn-light">
+                        AddChart
+                    </button>
+                </div>
+            </div>
+            <div class="card">
+                <img src="./assets/img/jean/jean2.jpg" alt="watch" />
+                <div class="card-text">
+                    <p>Jean Alexis Fern</p>
+                    <h5>Rp 560.000,00</h5>
+                    <button type="button" id="9" class="btn btn-light">
+                        AddChart
+                    </button>
+                </div>
+            </div>
+            <div class="card">
+                <img src="./assets/img/jean/jean3.jpg" alt="watch" />
+                <div class="card-text">
+                    <p>Jean Alexis Ranguald</p>
+                    <h5>Rp 600.000,00</h5>
+                    <button type="button" id="10" class="btn btn-light">
+                        AddChart
+                    </button>
+                </div>
+            </div>
+            <div class="card">
+                <img src="./assets/img/jean/jean4.jpg" alt="watch" />
+                <div class="card-text">
+                    <p>Jean Alexis Garth</p>
+                    <h5>Rp 590.000,00</h5>
+                    <button type="button" id="11" class="btn btn-light">
+                        AddChart
+                    </button>
+                </div>
+            </div>
+            <div class="card">
+                <img src="./assets/img/jean/jean5.jpg" alt="watch" />
+                <div class="card-text">
+                    <p>Jean Alexis Theodore</p>
+                    <h5>Rp 419.000,00</h5>
+                    <button type="button" id="12" class="btn btn-light">
+                        AddChart
+                    </button>
+                </div>
+            </div>
+            <div class="card">
+                <img src="./assets/img/jean/jean6.jpg" alt="watch" />
+                <div class="card-text">
+                    <p>Jean Alexis Holger</p>
+                    <h5>Rp 349.000,00</h5>
+                    <button type="button" id="13" class="btn btn-light">
+                        AddChart
+                    </button>
+                </div>
+            </div>
+            <div class="card">
+                <img src="./assets/img/jean/jean7.jpg" alt="watch" />
+                <div class="card-text">
+                    <p>Jean Alexis Alva</p>
+                    <h5>Rp 409.000,00</h5>
+                    <button type="button" id="14" class="btn btn-light">
+                        AddChart
+                    </button>
+                </div>
+            </div>
+            <div class="card">
+                <img
+                    src="./assets/img//alex/alexandra-christi ac.jpg"
+                    alt="watch"
+                />
+                <div class="card-text">
+                    <p>Alexandra Christi 8586</p>
+                    <h5>Rp 1.000.000,00</h5>
+                    <button type="button" id="15" class="btn btn-light">
+                        AddChart
+                    </button>
+                </div>
+            </div>
+            <div class="card">
+                <img src="./assets/img/alex/alex2.jpg" alt="watch" />
+                <div class="card-text">
+                    <p>Alexandra Christi 6437</p>
+                    <h5>RP 929.000,00</h5>
+                    <button type="button" id="16" class="btn btn-light">
+                        AddChart
+                    </button>
+                </div>
+            </div>
+            <div class="card">
+                <img
+                    src="./assets/img/alex/alexx3.jpg"
+                    alt="watch"
+                    style="height: 200px;"
+                />
+                <div class="card-text">
+                    <p>Alexandra Christi 8519</p>
+                    <p></p>
+                    <h5>Rp 1.200.000,00</h5>
+                    <button type="button" id="17" class="btn btn-light">
+                        AddChart
+                    </button>
+                </div>
+            </div>
+            <div class="card">
+                <img src="./assets/img/alex/alex4.jpg" alt="watch" />
+                <div class="card-text">
+                    <p>Alexandra Christi 6515</p>
+                    <h5>Rp 1.072.000,00</h5>
+                    <button type="button" id="18" class="btn btn-light">
+                        AddChart
+                    </button>
+                </div>
+            </div>
+            <div class="card">
+                <img src="./assets/img/alex/alex5.jpg" alt="watch" />
+                <div class="card-text">
+                    <p>Alexandra Christi 6546</p>
+                    <h5>Rp 882.000,00</h5>
+                    <button type="button" id="19" class="btn btn-light">
+                        AddChart
+                    </button>
+                </div>
+            </div>
+            <div class="card">
+                <img src="./assets/img/alex/alex6.jpg" alt="watch" />
+                <div class="card-text">
+                    <p>Alexandra Christi 2509</p>
+                    <h5>Rp 899.000,00</h5>
+                    <button type="button" id="20" class="btn btn-light">
+                        AddChart
+                    </button>
+                </div>
+            </div>
+            <div class="card">
+                <img src="./assets/img/alex/alex7.jpg" alt="watch" />
+                <div class="card-text">
+                    <p>Alexandra Christi 8092</p>
+                    <h5>Rp 840.000,00</h5>
+                    <button type="button" id="21" class="btn btn-light">
+                        AddChart
+                    </button>
+                </div>
+            </div>
+            <div class="card">
+                <img
+                    src="./assets/img/jims/jims1.jpg"
+                    alt="watch"
+                    style="height: 2008x;"
+                />
+                <div class="card-text">
+                    <p>Jims Honey 8045</p>
+                    <h5>Rp 260.000,00</h5>
+                    <button type="button" id="22" class="btn btn-light">
+                        AddChart
+                    </button>
+                </div>
+            </div>
+            <div class="card">
+                <img src="./assets/img/jims/jims2.jpg" alt="watch" />
+                <div class="card-text">
+                    <p>Jims Honey 8156</p>
+                    <h5>Rp 175.000,00</h5>
+                    <button type="button" id="23" class="btn btn-light">
+                        AddChart
+                    </button>
+                </div>
+            </div>
+            <div class="card">
+                <img src="./assets/img/jims/jims3.jpg" alt="watch" />
+                <div class="card-text">
+                    <p>Jims Honey H8001</p>
+                    <h5>Rp 189.900,00</h5>
+                    <button type="button" id="24" class="btn btn-light">
+                        AddChart
+                    </button>
+                </div>
+            </div>
+            <div class="card">
+                <img src="./assets/img/jims/jims4.jpg" alt="watch" />
+                <div class="card-text">
+                    <p>Jims Honey 8480</p>
+                    <h5>Rp 175.000,00</h5>
+                    <button type="button" id="25" class="btn btn-light">
+                        AddChart
+                    </button>
+                </div>
+            </div>
+            <div class="card">
+                <img src="assets/img/jims/jims5.jpg" alt="watch" />
+                <div class="card-text">
+                    <p>Jims Honey 8607</p>
+                    <h5>Rp 147.000,00</h5>
+                    <button type="button" id="26" class="btn btn-light">
+                        AddChart
+                    </button>
+                </div>
+            </div>
+            <div class="card">
+                <img src="assets/img/jims/jims6.jpg" alt="watch" />
+                <div class="card-text">
+                    <p>Jims Honey 8188</p>
+                    <h5>Rp 244.000,00</h5>
+                    <button type="button" id="27" class="btn btn-light">
+                        AddChart
+                    </button>
+                </div>
+            </div>
+            <div class="card">
+                <img src="assets/img/jims/jims7.jpg" alt="watch" />
+                <div class="card-text">
+                    <p>Jims Honey 8417</p>
+                    <h5>Rp 157.000,00</h5>
+                    <button type="button" id="28" class="btn btn-light">
+                        AddChart
+                    </button>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="./assets/img/michael/michael1.jpg" alt="watch" />
+                <div class="card-text">
+                    <p>Michael Kors 6560</p>
+                    <h5>Rp 1.900.000,00</h5>
+                    <button type="button" id="29" class="btn btn-light">
+                        AddChart
+                    </button>
+                </div>
+            </div>
+            <div class="card">
+                <img src="./assets/img/michael/michael2.jpg" alt="watch" />
+                <div class="card-text">
+                    <p>Michael Kors 6367</p>
+                    <h5>Rp 2.050.000,00</h5>
+                    <button type="button" id="30" class="btn btn-light">
+                        AddChart
+                    </button>
+                </div>
+            </div>
+            <div class="card">
+                <img src="./assets/img/michael/michael3.jpg" alt="watch" />
+                <div class="card-text">
+                    <p>Michael Kors 5896</p>
+                    <h5>Rp 896.000,00</h5>
+                    <button type="button" id="31" class="btn btn-light">
+                        AddChart
+                    </button>
+                </div>
+            </div>
+            <div class="card">
+                <img src="./assets/img/michael/michael4.jpg" alt="watch" />
+                <div class="card-text">
+                    <p>Michael Kors 5550</p>
+                    <h5>Rp 2.000.000,00</h5>
+                    <button type="button" id="32" class="btn btn-light">
+                        AddChart
+                    </button>
+                </div>
+            </div>
+            <div class="card">
+                <img src="./assets/img/michael/michael5.jpg" alt="watch" />
+                <div class="card-text">
+                    <p>Michael Kors 5354</p>
+                    <h5>Rp 1.800.000,00</h5>
+                    <button type="button" id="33" class="btn btn-light">
+                        AddChart
+                    </button>
+                </div>
+            </div>
+            <div class="card">
+                <img src="./assets/img/michael/michael6.jpg" alt="watch" />
+                <div class="card-text">
+                    <p>Michael Kors 8295</p>
+                    <h5>Rp 2.388.000,00</h5>
+                    <button type="button" id="34" class="btn btn-light">
+                        AddChart
+                    </button>
+                </div>
+            </div>
+            <div class="card">
+                <img src="./assets/img/michael/michael7.jpg" alt="watch" />
+                <div class="card-text">
+                    <p>Michael Kors 8184</p>
+                    <h5>Rp 2.675.000,00</h5>
+                    <button type="button" id="35" class="btn btn-light">
+                        AddChart
+                    </button>
+                </div>
+            </div>
+        </div>
+        <!-- <div class="klik">
+            <a href="#">Prev</a>Page 1 of 1<a href="#">Next</a>
+        </div> -->
+        <br /><br />
+        <hr />
+        <div class="info">
+            <div class="link">
+                <a href="./index.html">Home</a>
+                <a href="./login_customer.html">Login</a>
+                <a hr8f="./product.html">Product</a>
+                <a href="./checkout.html">Checkout</a>
+            </div>
+
+            <div class="link">
+                <a href="#">
+                    Konfirmasi Pembayaran & Informasi Nomor Rekening
+                </a>
+                <a href="#">Syarat & Ketentuan </a>
+                <a href="#">Retur & Garansi Produk </a>
+                <a hr8f="#">Tentang kami</a>
+                <a href="#">FAQ</a>
+                <a href="#">Kontak Kami</a>
+            </div>
+
+            <div class="link" id="contact">
+                <p>
+                    Customer Service:
+                    <br />
+                    WhatsApp : +62 888 0276 2751 <br />
+                    Senin - 8umat: 07:00 - 17:00 WIB
+                    <br />
+                    Sabtu: 09:00 - 15:00 WIB
+                    <br />
+                    Minggu: 09:00 - 15:00 WIB
+                </p>
+            </div>
+        </div>
+
+        <hr />
+        <footer>
+            <a href="https:facebook.com"
+                ><img
+                    src="./assets/img/logo/facebook.png"
+                    style="width: 24px; margin-right: 15px;"
+            /></a>
+            <a href="https://instagram.com"
+                ><img
+                    src="./assets/img/logo/instagram-logo.png"
+                    style="width: 24px; margin-right: 15px;"
+            /></a>
+            <br />
+            <div>
+                <p>&copy 2020, Mywatch.id</p>
+            </div>
+        </footer>
+        <script
+            src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+            integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+            crossorigin="anonymous"
+        ></script>
+        <script
+            src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+            integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+            crossorigin="anonymous"
+        ></script>
+        <script src="https://cdn.jsdelivr.net/npm/sweetalert2@7.12.15/dist/sweetalert2.all.min.js"></script>
+        <script src="./assets/js/product.js"></script>
+        <script src="./assets/js/cartcount.js"></script>
+        <script src="./assets/js/profile.js"></script>
+        <script src="./assets/js/logout.js"></script>
+    </body>
+</html>

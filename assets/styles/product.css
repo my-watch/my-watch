@@ -1,0 +1,202 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.text1 {
+    margin: auto;
+    text-align: left;
+    padding-left: 50px;
+}
+a:hover {
+    color: black;
+    text-decoration: black;
+}
+.text {
+    text-align: center;
+    margin: auto;
+    margin-top: 50px;
+}
+
+#toolbar-content {
+    display: flex;
+    margin: auto;
+}
+
+#toolbar-content #drop {
+    margin: auto;
+    margin-left: 0px;
+}
+
+.space {
+    width: 80px;
+    height: 5px;
+    background-color: black;
+    margin: auto;
+}
+.card a {
+    color: black;
+    text-decoration: 1px black;
+    margin: auto;
+    margin-top: 15px;
+    margin-right: 10px;
+    padding: 5px;
+    text-align: center;
+}
+
+.card a:hover {
+    border: 1px solid black;
+    width: 80px;
+    text-align: center;
+    text-decoration: none;
+}
+.card a:active {
+    background-color: black;
+    color: white;
+}
+
+.card {
+    width: 200px;
+    height: 350px;
+    box-shadow: black;
+    margin: 10px;
+    background-color: whitesmoke;
+    border: none;
+    text-align: center;
+}
+
+#toolbar-content p {
+    margin: 50px;
+}
+
+#toolbar {
+    margin-left: 0px;
+    text-align: center;
+}
+
+.card-text {
+    padding: 5px;
+    height: 100px;
+}
+.card img {
+    max-width: 300px;
+    height: 200px;
+}
+
+.img img {
+    margin-top: 20px;
+    max-width: 100%;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+.content {
+    margin-top: -100px;
+    z-index: 1;
+    background-color: white;
+    width: 500px;
+    margin: auto;
+    height: 200px;
+}
+
+#container {
+    width: 1000px;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.info {
+    margin: 50px;
+    margin-top: 100px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    text-align: left;
+}
+
+.info a {
+    text-decoration: none;
+    display: block;
+    color: black;
+}
+
+footer {
+    padding: 30px;
+    margin-left: 100px;
+}
+
+footer img {
+    margin-right: 20px;
+    margin-bottom: 15px;
+}
+
+.button {
+    margin: auto;
+    background-color: white;
+    width: 20px;
+}
+
+.header-1 {
+    background-color: black;
+    color: white;
+    font-size: medium;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 40px;
+}
+
+#id {
+    display: inline;
+}
+
+.klik {
+    width: 300px;
+    margin: auto;
+    margin-top: 50px;
+    text-align: center;
+}
+
+.klik a {
+    margin: 0 10px;
+    padding: 10px;
+    color: black;
+    text-decoration: none;
+    width: 70px;
+    border: 1px solid black;
+}
+
+.klik a:hover {
+    color: black;
+    text-decoration: 1px solid black;
+}
+
+.klik a:active {
+    background-color: black;
+    color: white;
+}
+
+#container-sell {
+    width: 400px;
+    margin: auto;
+}
+#sell {
+    width: 400px;
+    margin: auto;
+    display: flex;
+}
+
+.input input {
+    width: 200px;
+    margin: 20px 60px 10px 0;
+    /* text-align: center; */
+}
+
+#btn {
+    width: 200px;
+    margin-top: 30px;
+    margin-left: 120px;
+}
