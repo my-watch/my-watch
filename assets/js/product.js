@@ -6,7 +6,7 @@ let watch = [
     },
     {
         name: "Christyan Arden CA2685",
-        price: 365000,
+        price: 195000,
         img: "./assets/img/ardan/arden2.jpg",
     },
     {
@@ -72,7 +72,7 @@ let watch = [
 
     {
         name: "Alexandra Christi 8586",
-        price: 990000,
+        price: 1000000,
         img: "./assets/img/alex/alexandra-christi ac.jpg",
     },
     {
@@ -93,7 +93,7 @@ let watch = [
 
     {
         name: "Alexandra Christi 6546",
-        price: 815000,
+        price: 882000,
         img: "./assets/img/alex/alex5.jpg",
     },
     {
@@ -108,17 +108,17 @@ let watch = [
     },
     {
         name: "Jims Honey 8045",
-        price: 220000,
+        price: 260000,
         img: "./assets/img/jims/jims1.jpg",
     },
     {
         name: "Jims Honey 8156",
-        price: 172000,
+        price: 175000,
         img: "./assets/img/jims/jims2.jpg",
     },
     {
         name: "Jims Honey H8001",
-        price: 139900,
+        price: 189900,
         img: "./assets/img/jims/jims3.jpg",
     },
     {
