@@ -237,9 +237,9 @@ async function shows() {
             async function add() {
                  swal("Success", "Your item has been added to Cart!", "success");
                 try {
-                    let productName = resultShows[i - 1].name;
-                    let price = resultShows[i - 1].price;
-                    let img = resultShows[i - 1].img;
+                    let productName = watch[i - 1].name;
+                    let price = watch[i - 1].price;
+                    let img = watch[i - 1].img;
 
                     let data = {
                         productName,
