@@ -67,3 +67,5 @@ function deleteCart(id) {
 
 let firstName = document.getElementById("firstName").value;
 let email = document.getElementById("email").value;
+
+export default { redirect };
