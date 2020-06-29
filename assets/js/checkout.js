@@ -115,3 +115,10 @@ function deleteCart(id) {
         .then((res) => console.log(res))
         .catch((err) => console.log(err));
 }
+
+let btnCheckout = document.getElementById("btnDel1");
+btnCheckout.addEventListener("click", function () {
+    if (confirm("Anda harus Login Dulu!")) {
+        window.location.href = "login_customer.html";
+    }
+});

@@ -30,7 +30,6 @@
         />
     </head>
     <body>
-        <!-- Navbar -->
         <nav class="navbar navbar-expand-md navbar-light bg-light fixed-top">
             <a class="navbar-brand" href="#!">
                 <img
@@ -60,12 +59,12 @@
                 <!-- Right -->
                 <ul class="navbar-nav ml-auto">
                     <li class="nav-item active">
-                        <a href="./index.html" class="nav-link waves-effect">
+                        <a href="./profile.html" class="nav-link waves-effect">
                             Home
                         </a>
                     </li>
                     <li class="nav-item active">
-                        <a href="product.html" class="nav-link waves-effect">
+                        <a href="product2.html" class="nav-link waves-effect">
                             Product
                         </a>
                     </li>
@@ -76,7 +75,7 @@
                         </a>
                     </li>
                     <li class="nav-item active">
-                        <a href="checkout.html" class="nav-link waves-effect">
+                        <a href="checkout2.html" class="nav-link waves-effect">
                             <i
                                 class="fa fa-shopping-cart"
                                 aria-hidden="true"
@@ -85,25 +84,22 @@
                         </a>
                     </li>
                     <li class="nav-item active">
-                        <a
-                            href="login_customer.html"
-                            class="nav-link waves-effect"
-                        >
-                            Sign in
+                        <a class="nav-link waves-effect">
+                            <span id="profile"></span>
                         </a>
                     </li>
                     <li class="nav-item pl-2 mb-2 mb-md-0">
                         <a
-                            href="register.html"
+                            id="btn-logout"
                             type="button"
                             class="btn btn-outline-info btn-md btn-rounded btn-navbar waves-effect waves-dark"
-                            >Sign up</a
+                            >Logout</a
                         >
                     </li>
                 </ul>
             </div>
         </nav>
-
+        <!-- endnav -->
         <div class="img">
             <img src="./assets/img/logo/header img.jpg" alt="header-img" />
         </div>
@@ -511,7 +507,7 @@
             </div>
 
             <div class="link">
-                 <p>
+                <p>
                     Alamat:
                     <br />
                     Jl.Puncak Indah Lontar Barat,
@@ -564,5 +560,7 @@
         <script src="https://cdn.jsdelivr.net/npm/sweetalert2@7.12.15/dist/sweetalert2.all.min.js"></script>
         <script src="./assets/js/product.js"></script>
         <script src="./assets/js/cartcount.js"></script>
+        <script src="./assets/js/profile.js"></script>
+        <script src="./assets/js/logout.js"></script>
     </body>
 </html>
