@@ -2,6 +2,7 @@
 <html lang="en">
     <head>
         <title>My Watch</title>
+
         <link
             rel="shortcut icon"
             href="assets/img/logo.png"
@@ -72,7 +73,7 @@
                     </li>
 
                     <li class="nav-item active">
-                        <a href="#contact" class="nav-link waves-effect">
+                        <a href="/contact.html" class="nav-link waves-effect">
                             Contact
                         </a>
                     </li>
@@ -87,15 +88,17 @@
                     </li>
                     <li class="nav-item active">
                         <a
+                            type="button"
                             href="login_customer.html"
                             class="nav-link waves-effect"
                         >
-                            Sign in
+                            <p id="profile">Sign In</p>
                         </a>
                     </li>
                     <li class="nav-item pl-2 mb-2 mb-md-0">
                         <a
-                            href="register.html"
+                            id="btn-logout"
+                            href="/register.html"
                             type="button"
                             class="btn btn-outline-info btn-md btn-rounded btn-navbar waves-effect waves-dark"
                             >Sign up</a
@@ -125,7 +128,6 @@
             </ol>
             <div class="carousel-inner">
                 <div class="carousel-item active">
-                    <a href="product.html"></a>
                     <img
                         class="d-block w-100"
                         src="./assets/img/Banner1.jpg"
@@ -133,7 +135,6 @@
                     />
                 </div>
                 <div class="carousel-item">
-                    <a href="product.html"></a>
                     <img
                         class="d-block w-100"
                         src="./assets/img/Banner2.jpg"
@@ -150,7 +151,6 @@
                 </div>
 
                 <div class="carousel-item">
-                    <a href="product.html"></a>
                     <img
                         class="d-block w-100"
                         src="./assets/img/banner5.jpg"
@@ -312,6 +312,11 @@
                 <p>&copy 2020, Mywatch.id</p>
             </div>
         </footer>
+        <script src="/assets/js/profile.js"></script>
+        <script type="module" src="/assets/js/logout.js"></script>
+
+        <!-- Sweet Alert -->
+        <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
         <script
             src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
             integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"

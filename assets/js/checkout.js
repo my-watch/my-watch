@@ -44,13 +44,7 @@ async function showCart() {
         </div>
     </td>
     <td data-th="Price"> ${getData.price.toString().toRupiah()}</td>
-    <td data-th="Quantity" class="quantity">
-        <input
-            type="text"
-            class="form-control text-center"
-            value="1"
-        />
-    </td>
+    
     <td data-th="Subtotal" class="text-center sub-total">
         ${getData.price.toString().toRupiah()}
     </td>
@@ -116,9 +110,15 @@ function deleteCart(id) {
         .catch((err) => console.log(err));
 }
 
+let logUser1 = JSON.parse(localStorage.getItem("user"));
+
 let btnCheckout = document.getElementById("btnDel1");
 btnCheckout.addEventListener("click", function () {
-    if (confirm("Anda harus Login Dulu!")) {
+    if (logUser1 != null) {
+        window.location.href = "billing.html";
+    } else {
+        alert("Anda Harus Login !");
+
         window.location.href = "login_customer.html";
     }
 });
