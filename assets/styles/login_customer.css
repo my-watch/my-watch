@@ -1,0 +1,54 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP&family=Titillium+Web:wght@600&display=swap');
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-image: url(/assets/img/doodles.png);
+    background-repeat: repeat;
+}
+
+.h5,
+.h6,
+.btn {
+    font-family: 'Titillium Web', sans-serif;
+}
+
+.form-group {
+    font-family: 'Noto Sans JP', sans-serif;
+}
+
+
+.container {
+    margin-top: 50px;
+}
+
+.logo-head {
+    width: 20%;
+}
+
+/* .col-sm {
+    border: 1px solid black;
+} */
+
+img {
+    width: 100%;
+    height: 100%;
+}
+
+.form-register {
+    border: 0.1px solid rgb(96, 243, 96);
+}
+
+footer {
+    padding: 30px;
+    margin-left: 100px;
+}
+
+footer img {
+    margin-right: 20px;
+    margin-bottom: 15px;
+}

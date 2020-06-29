@@ -1,0 +1,20 @@
+body {
+    margin: 0px;
+}
+.header-1 {
+    background-color: black;
+    color: white;
+    font-size: medium;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 40px;
+}
+
+.carousel-item {
+    height: auto;
+}
+
+.dirumah-aja {
+    margin-bottom: 40px;
+}

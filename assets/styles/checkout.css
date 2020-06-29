@@ -1,0 +1,11 @@
+@media only screen and (max-width: 500px) {
+    .quantity {
+        display: none;
+    }
+    .sub-total {
+        display: none;
+    }
+    .add-space {
+        display: none;
+    }
+}

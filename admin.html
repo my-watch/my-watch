@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Admin</title>
+        <link
+            href="https://fonts.googleapis.com/css2?family=Saira+Condensed&display=swap"
+            rel="stylesheet"
+        />
+        <link rel="stylesheet" href="./assets/styles/product.css" />
+        <link rel="stylesheet" href="./assets/styles/mobile.css" />
+        <link
+            rel="stylesheet"
+            href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+            integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+            crossorigin="anonymous"
+        />
+        <link
+            rel="stylesheet"
+            href="path/to/font-awesome/css/font-awesome.min.css"
+        />
+    </head>
+    <body>
+        <section class="header-1">
+            <h6>Gratis Ongkir Sampai Rp. 20.000 + Free Box</h6>
+        </section>
+        <!-- Navbar -->
+        <nav class="navbar navbar-expand-md navbar-light">
+            <a class="navbar-brand" href="#!">
+                <img
+                    src="./assets/img/logo/logo.png"
+                    height="80"
+                    alt="MYWATCH logo"
+                />
+            </a>
+
+            <!-- Collapse button -->
+            <button
+                class="navbar-toggler"
+                type="button"
+                data-toggle="collapse"
+                data-target="#basicExampleNav1"
+                aria-controls="basicExampleNav1"
+                aria-expanded="false"
+                aria-label="Toggle navigation"
+            >
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <!-- Breadcrumbs -->
+
+            <!-- Links -->
+            <div class="collapse navbar-collapse" id="basicExampleNav1">
+                <!-- Right -->
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item active">
+                        <a href="./index.html" class="nav-link waves-effect">
+                            Home
+                        </a>
+                    </li>
+                    <!-- <div class="dropdown open">
+                        <a
+                            class="nav-item active bg-white nav-link waves-effect"
+                            type="button"
+                            id="triggerId"
+                            data-toggle="dropdown"
+                            aria-haspopup="true"
+                            aria-expanded="false"
+                            href="./product.html"
+                        >
+                            Product</a
+                        >
+                    </div> -->
+
+                    <li class="nav-item active">
+                        <a href="./product.html" class="nav-link waves-effect">
+                            Product
+                        </a>
+                    </li>
+                    <li class="nav-item active">
+                        <a href="#contact" class="nav-link waves-effect">
+                            Contact
+                        </a>
+                    </li>
+                    <li class="nav-item active">
+                        <a href="checkout.html" class="nav-link waves-effect">
+                            <i
+                                class="fa fa-shopping-cart"
+                                aria-hidden="true"
+                            ></i>
+                            Bayar Yuk!<span id="cart-count"></span>
+                        </a>
+                    </li>
+                    <li class="nav-item active">
+                        <a href="./register.html" class="nav-link waves-effect">
+                            Sign in
+                        </a>
+                    </li>
+                    <li class="nav-item pl-2 mb-2 mb-md-0">
+                        <a
+                            href="#!"
+                            type="button"
+                            class="btn btn-outline-info btn-md btn-rounded btn-navbar waves-effect waves-dark"
+                            >Sign up</a
+                        >
+                    </li>
+                </ul>
+            </div>
+            <!-- Links -->
+        </nav>
+
+        <!-- <div class="img">
+            <img src="./assets/img/logo/header img.jpg" alt="header-img" />
+        </div> -->
+
+        <div class="text">
+            <h2>SELL YOUR PRODUCT</h2>
+            <div class="space"></div>
+        </div>
+
+        <br />
+        <nav class="navbar navbar-light bg-light" id="toolbar">
+            <span class="navbar-text" id="toolbar-content">
+                <a href="./product.html">Elegant</a>
+                <a href="./merk2.html">Classic</a>
+                <a href="./merk3.html">Prestigious</a>
+            </span>
+        </nav>
+        <br />
+
+        <div id="container-sell">
+            <div id="sell">
+                <div>
+                    <img src="./assets/img/logo/sell-img.jpg" alt="logo" />
+                </div>
+                <div>
+                    <div class="input">
+                        <div>
+                            <label for="name">Product Name</label>
+                        </div>
+                        <input type="text" id="name" />
+                    </div>
+                    <div class="input">
+                        <div>
+                            <label for="price">Product Price</label>
+                        </div>
+                        <input type="number" id="price" />
+                    </div>
+                    <div class="input">
+                        <div>
+                            <label for="img">Image Link</label>
+                        </div>
+                        <input type="text" id="img" />
+                    </div>
+                </div>
+            </div>
+            <div>
+                <button type="submit" class="btn btn-dark" id="btn">
+                    SELL
+                </button>
+            </div>
+        </div>
+         <br /><br />
+        <hr />
+        <div class="info">
+            <div class="link">
+                <a href="./index.html">Home</a>
+                <a href="./login_customer.html">Login</a>
+                <a href="./product.html">Product</a>
+                <a href="./checkout.html">Checkout</a>
+            </div>
+
+            <div class="link">
+                <a href="#">
+                    Konfirmasi Pembayaran & Informasi Nomor Rekening
+                </a>
+                <a href="#">Syarat & Ketentuan </a>
+                <a href="#">Retur & Garansi Produk </a>
+                <a href="#">Tentang Kami</a>
+                <a href="#">FAQ</a>
+                <a href="#">Kontak Kami</a>
+            </div>
+
+            <div class="link" id="contact">
+                <p>
+                    Customer Service:
+                    <br />
+                    WhatsApp : +62 888 0276 2751 <br />
+                    Senin - Jumat: 09:00 - 17:00 WIB
+                    <br />
+                    Sabtu: 09:00 - 15:00 WIB
+                    <br />
+                    Minggu: 09:00 - 15:00 WIB
+                </p>
+            </div>
+        </div>
+
+        <hr />
+        <footer>
+            <a href="https:facebook.com"
+                ><img
+                    src="./assets/img/logo/facebook.png"
+                    style="width: 24px; margin-right: 15px;"
+            /></a>
+            <a href="https://instagram.com"
+                ><img
+                    src="./assets/img/logo/instagram-logo.png"
+                    style="width: 24px; margin-right: 15px;"
+            /></a>
+            <br />
+            <div>
+                <p>&copy 2020, Mywatch.id</p>
+            </div>
+        </footer>
+        <script
+            src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+            integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+            crossorigin="anonymous"
+        ></script>
+        <script
+            src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+            integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+            crossorigin="anonymous"
+        ></script>
+        <script src="./assets/js/admin.js" type="module"></script>
+    </body>
+</html>
